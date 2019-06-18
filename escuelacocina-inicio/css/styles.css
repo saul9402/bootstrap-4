@@ -1,0 +1,9 @@
+:root {
+    --primario: #f46669;
+    --secundario: #c7c57d;
+    --gris: #f5f5f5;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#303030;
+}
