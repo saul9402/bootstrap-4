@@ -18,6 +18,39 @@ body {
     background-color: #752f97!important;
 }
 
+/* navegacion */
+
+/* con esto indicas que se aplicara solo cuando ambas clases este aplicadas */
+
+.fixed-top.bg-success {
+    -webkit-box-shadow: 0px 7px 14px -4px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 7px 14px -4px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 7px 14px -4px rgba(0, 0, 0, 0.61);
+}
+
+.fixed-top {
+    transition: all .3s ease;
+}
+
+.fixed-top .nav-link {
+    color: white!important;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+}
+
+a.navbar-brand.text-light:hover {
+    color: white!important;
+}
+
+/* video header */
+
 .embed-responsive {
     position: relative;
     background-image: url(../img/banda.jpg);
@@ -123,19 +156,33 @@ body {
 
 /* fecha */
 
-.fecha{
+.fecha {
     font-size: 2.8rem;
 }
 
-.fecha span{
+.fecha span {
     font-weight: 700;
 }
 
-.fecha span::before{
+.fecha span::before {
     content: '-';
-
 }
 
-.fecha span:first-child::before{
+.fecha span:first-child::before {
     display: none;
+}
+
+/* boletos */
+
+.boletos .precio {
+    font-size: 2rem;
+}
+
+.boletos .active {
+    background-color: #752f97!important;
+    border-color: #752f97!important;
+}
+
+.list-group-item-success {
+    background-color: #4cb8b3!important;
 }
