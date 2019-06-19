@@ -9,22 +9,22 @@ body {
     color: #303030;
 }
 
-p{
+p {
     font-weight: 100;
     line-height: 3rem;
     font-size: 1.2rem;
 }
 
-.nav-link, .nav-link:hover{
+.nav-link, .nav-link:hover {
     text-transform: uppercase;
     color: black;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: #f46669!important;
 }
 
-.bg-secondary{
+.bg-secondary {
     background-color: #c7c57d!important
 }
 
@@ -43,12 +43,13 @@ p{
 }
 
 /* Se define un tamaño para dispositivos pequeños */
-.imagen-superior > div,
-.imagen-inferior > div{
+
+.imagen-superior>div, .imagen-inferior>div {
     height: 30rem;
 }
 
 /* se define otro tamaño para dispositivos medianos y grandes */
+
 @media(min-width:768px) {
     .imagen-superior>div, .imagen-inferior>div {
         height: 45rem;
@@ -56,28 +57,30 @@ p{
 }
 
 /* Se cambia el orden en tamaños pequeños */
-.imagen-inferior .bg-comida{
+
+.imagen-inferior .bg-comida {
     order: 1;
 }
 
 /* Se reestablece el orden en tamaños medianos y grandes */
+
 @media(min-width:768px) {
     .imagen-inferior .bg-comida {
         order: unset;
     }
 }
 
-.imagen-superior .contenido{
+.imagen-superior .contenido {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
 
-.imagen-inferior .contenido{
+.imagen-inferior .contenido {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-.contenido p{
+.contenido p {
     font-size: 1.2rem;
     font-weight: 100;
     line-height: 2rem;
@@ -85,7 +88,7 @@ p{
 
 /* nosotros */
 
-.separador::after{
+.separador::after {
     content: '';
     display: block;
     width: 300px;
@@ -94,10 +97,77 @@ p{
     background-repeat: no-repeat;
     background-position: center center;
     margin: 20px auto 0 auto;
-
 }
 
-.nosotros .informacion h3{
+.nosotros .informacion h3 {
     font-weight: 300;
     font-size: 1.6rem;
+}
+
+/* proximas clases */
+
+.clases {
+    background-color: #f5f5f5;
+}
+
+.card-meta span {
+    font-weight: 700;
+}
+
+.card-subtitle {
+    color: #f46669;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.card-body a {
+    color: #f46669;
+}
+
+.badge-secondary {
+    background-color: #c7c57d;
+    color: white;
+}
+
+/* Licenciatura */
+
+.licenciatura {
+    background-image: url(../img/chef_bg.jpg);
+    /* se pone cover para que la imagen use todo el espacio disponible y no se repita */
+    background-size: cover;
+    /* con esto se pone al centro tanto en vertical como eb horizontal */
+    background-position: center center;
+}
+
+.estudia-licenciatura {
+    height: 38rem;
+}
+
+.estudia-licenciatura .contenido h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.estudia-licenciatura .contenido p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.btn-primary {
+    background-color: #f46669;
+    border-color: #f46669;
+}
+
+.btn-primary:hover {
+    background-color: #b81f21;
+    border-color: #b81f21;
 }
