@@ -36,6 +36,10 @@ body {
     color: white!important;
 }
 
+.fixed-top .active{
+    background-color: #752f97!important;
+}
+
 .navbar-brand {
     font-size: 1.8rem;
     font-weight: 400;
