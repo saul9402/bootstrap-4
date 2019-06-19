@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-danger {
+    background-color: #f53756!important;
+}
+
+.bg-success {
+    background-color: #4cb8b3!important;
+}
+
+.bg-warning {
+    background-color: #fef46d!important;
+}
+
+.bg-secondary {
+    background-color: #752f97!important;
+}
+
+.embed-responsive {
+    position: relative;
+    background-image: url(../img/banda.jpg);
+    height: 50rem;
+    background-position: center center;
+}
+
+@media(min-width:992px) {
+    .embed-responsive {
+        background-image: unset;
+        height: auto;
+    }
+}
+
+.embed-responsive::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#261900+29,38003f+65&0.5+1,0.5+50 */
+    background: -moz-linear-gradient(-45deg, rgba(38, 25, 0, 0.5) 1%, rgba(38, 25, 0, 0.5) 29%, rgba(49, 10, 37, 0.5) 50%, rgba(56, 0, 63, 0.5) 65%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(38, 25, 0, 0.5) 1%, rgba(38, 25, 0, 0.5) 29%, rgba(49, 10, 37, 0.5) 50%, rgba(56, 0, 63, 0.5) 65%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(38, 25, 0, 0.5) 1%, rgba(38, 25, 0, 0.5) 29%, rgba(49, 10, 37, 0.5) 50%, rgba(56, 0, 63, 0.5) 65%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80261900', endColorstr='#8038003f', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.informacion-concierto {
+    position: absolute;
+    top: 20%;
+    z-index: 100;
+}
+
+@media(min-width:992px) {
+    .informacion-concierto {
+        top: 35%;
+    }
+}
+
+.informacion-concierto h1 {
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+@media(min-width:992px) {
+    .informacion-concierto h1 {
+        font-size: 4rem;
+        line-height: unset;
+    }
+}
+
+.informacion-concierto h1 span, .informacion-concierto p {
+    font-weight: 700;
+    -webkit-box-shadow: 0px 5px 19px -7px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 0px 5px 19px -7px rgba(0, 0, 0, 0.88);
+    box-shadow: 0px 5px 19px -7px rgba(0, 0, 0, 0.88);
+}
+
+.informacion-concierto p {
+    font-size: 2rem;
+}
+
+.informacion-concierto .text-dark, .sobre-festival .text-dark {
+    color: #f53756!important;
+    font-weight: 700;
+}
+
+/* lineup */
+
+.separador::after {
+    content: '';
+    display: block;
+    height: 102px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120px;
+    margin: auto;
+}
+
+.rock::after {
+    background-image: url(../img/guitarra.png);
+}
+
+.dj::after {
+    background-image: url(../img/dj.png);
+}
+
+/* nth-child permite pasar un patron y con ello decirle cuales quieres seleccionar */
+
+.horario.bg-warning li:nth-child(2n+2) {
+    background-color: #eae05b!important
+}
+
+.horario.bg-success li:nth-child(2n+2) {
+    background-color: #3ca8a2!important
+}
