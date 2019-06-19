@@ -29,7 +29,7 @@ body {
 }
 
 .fixed-top {
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .fixed-top .nav-link {
@@ -185,4 +185,8 @@ a.navbar-brand.text-light:hover {
 
 .list-group-item-success {
     background-color: #4cb8b3!important;
+}
+
+.list-group-item:focus, .list-group-item:hover{
+    z-index: 0;
 }

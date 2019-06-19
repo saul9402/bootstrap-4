@@ -1,3 +1,14 @@
+// smooth scroll con js vanilla
+
+document.querySelectorAll('.navbar .nav-link').forEach(enlace => {
+    enlace.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(enlace.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
 
 // cambio de color el fondo al hacer scroll
 
