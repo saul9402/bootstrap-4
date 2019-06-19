@@ -171,3 +171,14 @@ p {
     background-color: #b81f21;
     border-color: #b81f21;
 }
+
+/* footer */
+
+.footer{
+    border-bottom: 10px solid #f46669;
+}
+
+.copyright{
+    font-weight: 700;
+    font-size: 1rem;
+}
