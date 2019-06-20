@@ -22,16 +22,43 @@ h2 {
 
 /* scroll */
 
-.header-scroll .nav-link{
+.header-scroll .nav-link {
     color: #777777!important;
 }
 
-.header-scroll .btn-outline-success:hover{
+.header-scroll .btn-outline-success:hover {
     color: white!important;
 }
 
-.header-scroll .btn-outline-success{
+.header-scroll .btn-outline-success {
     color: #00b30c!important;
+}
+
+.header-scroll {
+    opacity: 0;
+    /* con esto dejas flotando el menu */
+    position: fixed;
+    /* esto es para crear el efecto de que viene desde arriba deslizandose */
+    margin-top: -300;
+    /* para que no pierda el espacio que ya le definimos */
+    width: 100%;
+    /* para que se pueda ver sin que se encimen los elementos */
+    background-color: white;
+    /* para empujarlo alfrente de todo el contenid */
+    z-index: 100;
+    /* con esto creas una pequeña linea con la que separas el menu de el contenido */
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    /* con esto terminas de crear el efecto para que al aparecer se mas suave */
+    transition: all .4s ease;
+}
+
+/* con esta clase quitas el margen de 300 de arriba y
+ agregas la opcacidad, esto para crear el efecto de que
+  el menu se desliza hacia abajo */
+
+.header-scroll.activo {
+    margin-top: 0;
+    opacity: 1;
 }
 
 .header {
