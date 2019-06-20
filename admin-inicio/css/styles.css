@@ -1,0 +1,35 @@
+:root {
+    --primero: #8bc34a;
+    --segundo: #03a9f4;
+    --tercero: #ab47bc;
+    --cuarto: #ffb300;
+    --gris: #ecf0f5;
+    --azul: #25476a;
+}
+
+/* con esto y con los h-100 haces que el div se centre */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+body.login {
+    background-image: url(../img/libros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.login .contenido {
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 6px 29px -11px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 6px 29px -11px rgba(0, 0, 0, 1);
+    box-shadow: -1px 6px 29px -11px rgba(0, 0, 0, 1);
+}
+
+.btn-primary, .bg-primary {
+    background-color: #03a9f4!important;
+}
