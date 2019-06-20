@@ -172,3 +172,7 @@ h2 {
 .testimoniales .carousel-item ´p{
     font-size: .8rem;
 }
+
+.guias .card-title{
+    font-size: 1.2rem;
+}
