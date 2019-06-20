@@ -20,6 +20,20 @@ h2 {
     font-weight: 700!important;
 }
 
+/* scroll */
+
+.header-scroll .nav-link{
+    color: #777777!important;
+}
+
+.header-scroll .btn-outline-success:hover{
+    color: white!important;
+}
+
+.header-scroll .btn-outline-success{
+    color: #00b30c!important;
+}
+
 .header {
     background-image: url(../img/hero.jpg);
     min-height: 30rem;
