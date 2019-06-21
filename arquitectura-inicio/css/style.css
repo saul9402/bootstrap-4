@@ -1,3 +1,52 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+
+h1,h2,h3{
+    font-weight: 900;
+}
+
+.header {
+    height: 40rem;
+    background-image: url(../img/superior.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.bg-light{
+    background-color: white!important;
+}
+
+.nombre-sitio{
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.nombre-sitio span{
+    font-weight: 900;
+}
+
+.nav-link{
+    color: white!important;
+}
+
+@media(min-width: 992px){
+    header .nav-link:first-child::before{
+        display: none;
+    }
+    header .nav-link::before{
+        content: '|';
+        margin-right: 1.5rem;
+    }
+}
+
+.telefono::before{
+    content: '';
+    background-image: url(../img/icono_telefono.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-position: center center;
+    margin-right: 1rem;
+}
