@@ -101,3 +101,15 @@ h3 {
     background-image: url(../img//modelo_elite.jpg);
     background-position: bottom right;
 }
+/* footer */
+.footer{
+    height: 30rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-dark{
+    background-color: #111111!important;
+}
