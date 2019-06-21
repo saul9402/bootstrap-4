@@ -2,8 +2,16 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1,h2,h3{
+h1, h2, h3 {
     font-weight: 900;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
 }
 
 .header {
@@ -13,34 +21,34 @@ h1,h2,h3{
     background-position: bottom center;
 }
 
-.bg-light{
+.bg-light {
     background-color: white!important;
 }
 
-.nombre-sitio{
+.nombre-sitio {
     font-size: 2.4rem;
     font-weight: 300;
 }
 
-.nombre-sitio span{
+.nombre-sitio span {
     font-weight: 900;
 }
 
-.nav-link{
+.nav-link {
     color: white!important;
 }
 
-@media(min-width: 992px){
-    header .nav-link:first-child::before{
+@media(min-width: 992px) {
+    header .nav-link:first-child::before {
         display: none;
     }
-    header .nav-link::before{
+    header .nav-link::before {
         content: '|';
         margin-right: 1.5rem;
     }
 }
 
-.telefono::before{
+.telefono::before {
     content: '';
     background-image: url(../img/icono_telefono.png);
     background-repeat: no-repeat;
@@ -49,4 +57,47 @@ h1,h2,h3{
     width: 2rem;
     background-position: center center;
     margin-right: 1rem;
+}
+
+/* .nosotros    */
+
+.sobre-nosotros-bg {
+    min-height: 44rem;
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+@media(min-width: 768px) {
+    .sobre-nosotros-bg {
+        min-height: 36rem;
+    }
+}
+
+/* modelos */
+
+.modelo {
+    background-repeat: no-repeat;
+    min-height: 40rem;
+}
+
+@media(min-width: 768px) {
+    .modelo {
+        min-height: 30rem;
+    }
+}
+
+.basico{
+    background-image: url(../img//modelo_basico.jpg);
+    background-position: bottom right;
+}
+
+.premier{
+    background-image: url(../img//modelo_premier.jpg);
+    background-position: bottom left;
+}
+
+.elite{
+    background-image: url(../img//modelo_elite.jpg);
+    background-position: bottom right;
 }
